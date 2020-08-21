@@ -33,21 +33,29 @@ Height: `((height+15)&~0xF)>>3`
 value:
 
 ##### Intra 
+`rgb(1,1,255)`
 <div style="width:16px;height:16px;background:rgb(1,1,255);"></div>
 
 ##### Inter
+`(255,0,0)`
 <div style="width:16px;height:16px;background:rgb(255,0,0);"></div>
 
 ##### Inter + MV
+`rgb(255,96,2)`  
+`rgb(255,128,4)`  
+`rgb(255,160,16)`  
+`rgb(255,196,128)`  
 <div style="width:16px;height:16px;background:rgb(255,96,2);"></div>
 <div style="width:16px;height:16px;background:rgb(255,128,4);"></div>
 <div style="width:16px;height:16px;background:rgb(255,160,16);"></div>
 <div style="width:16px;height:16px;background:rgb(255,196,128);"></div>
 
 ##### Golden
+`rgb(32,255,32)`  
 <div style="width:16px;height:16px;background:rgb(32,255,32);"></div>
 
 ##### Golden + MV
+`rgb(196,255,64)`  
 <div style="width:16px;height:16px;background:rgb(196,255,64);"></div>
 
 #### Motion Vector
@@ -57,8 +65,7 @@ Y: `(height+15)&~0xF`
 Width: `((width+15)&~0xF)>>3`  
 Height: `((height+15)&~0xF)>>3`
 
-value: `((unsigned char)y)<<16|0x8000|((unsigned char)x)`
-
+value: `((unsigned char)((y+0x80)&0xFF))<<16|0x8000|((unsigned char)((x+0x80)&0xFF))`
 
 See also  
 [rdm03.js](https://mizt.github.io/blog/?id=rdm03)
