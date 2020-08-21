@@ -3,7 +3,7 @@
 ![](./data.png)
 
 Width: `(width+15)&~0xF`  
-Height: `(height+15)&~0xF + (((height+15)&~0xF)>>3)`
+Height: `((height+15)&~0xF)+(((height+15)&~0xF)>>3)`
 
 #### Residual
 
