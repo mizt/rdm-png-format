@@ -17,7 +17,7 @@ Y: `0`
 Width: `(width+15)&~0xF`  
 Height: `(height+15)&~0xF`  
 
-value: `-128~127` (YCbCr 4: 4: 4)  
+value: `-128~127` (YCbCr 4:4:4)  
 
 #### Display Fragments
 
