@@ -2,7 +2,8 @@
 
 ![](./data.png)
 
-テスト動画[「クジ」／時里充](https: //vimeo.com/160485702)
+テスト動画    
+[『クジ』時里充](https://vimeo.com/160485702)
 
 #### Resolution
 
@@ -91,4 +92,4 @@ Height: `((height+15)&~0xF)>>3`
 value: `(0x80+x)<<16|0x8000|(0x80+y))`
 
 #### See also
-[rdm03.js](https: //mizt.github.io/blog/?id=rdm03)
+[rdm03.js](https://mizt.github.io/blog/?id=rdm03)
