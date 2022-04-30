@@ -1,9 +1,8 @@
 ### rdm-png-format
 
-![](./data.png)
+![data](./data.png)
 
-テスト動画    
-[『クジ』時里充](https://vimeo.com/160485702)
+https://twitter.com/mizt_org/status/1520229142318686208
 
 #### Resolution
 
@@ -67,20 +66,6 @@ value:
 `0x0000FF`
 
 <div style="width: 16px;height: 16px;background: rgb(255,0,0);"></div>
-
-```
-char cm = -1;		
-if((rgb&0xFF0000)==0xFF0000) {
-  cm = (rgb-(rgb&0xFF0000)>>(8+5));
-  if(cm==1||(cm>=5&&cm!=7)) cm = -1;
-}
-else if((rgb&0xFF00)==0xFF00) {
-  cm = 5 + (!!(rgb-(rgb&0xFF00)));
-}
-else if((rgb&0xFF)==0xFF) {
-  cm = 1;
-}
-```
 
 #### Motion Vector
 
